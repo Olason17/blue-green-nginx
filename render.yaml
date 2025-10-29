@@ -19,3 +19,5 @@ services:
     dockerfilePath: ./node-green/Dockerfile
     plan: free
     autoDeploy: true
+    envVars:
+      - fromSecret: docker-hub-pull-config
