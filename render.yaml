@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: nginx-proxy
+    env: docker
+    dockerfilePath: ./nginx/Dockerfile
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: node-blue
+    env: docker
+    dockerfilePath: ./node-blue/Dockerfile
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: node-green
+    env: docker
+    dockerfilePath: ./node-green/Dockerfile
+    plan: free
+    autoDeploy: true
